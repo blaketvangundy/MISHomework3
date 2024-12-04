@@ -1,9 +1,9 @@
-<h1>Courses by Employee</h1>
+<h1>Projects by Employee</h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
       <tr>
-      <th>ID</th>
+      <th>Project ID</th>
       <th>Name</th>
       <th>Budget</th>
       <th>Start Date</th>
