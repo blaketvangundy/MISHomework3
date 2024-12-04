@@ -12,7 +12,7 @@
     </thead>
     <tbody>
 <?php
-while ($project = $projects->fetch_assoc() {
+while ($project = $projects->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $project['project_id']; ?></td>
