@@ -6,6 +6,7 @@
       <th>ID</th>
       <th>Name</th>
       <th>Budget</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
@@ -16,6 +17,12 @@ while ($project = $projects->fetch_assoc()) {
   <td><?php echo $project['project_id']; ?></td>
   <td><?php echo $project['project_name']; ?></td>
   <td><?php echo $project['project_budget']; ?></td>
+  <td>
+    <form method = "post" action = "assignments-by-project.php">
+      <input type ="hidden" name = "pid" value ="<?php echo $project['project_id']; ?>">
+    <button type="submit" class="btn btn-primary">Assignments</button>
+     </form>
+  </td>
 </tr>
 <?php
 }
