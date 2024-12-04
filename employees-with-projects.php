@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-employees-eith-projects.php");
+require_once("model-employees-with-projects.php");
 $pageTitle = "Employees with Projects";
 include "view-header.php";
 $employees = selectEmployees();
