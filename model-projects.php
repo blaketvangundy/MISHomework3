@@ -13,7 +13,7 @@ function selectProjects() {
     }
 }
 
-function insertProjects($pName, $pbudg, $pstart, $pend, $ploc) {
+function insertProjects($pName, $pbudg, $ploc) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO project (project_name, project_budget, start_date, end_date, project_location) VALUES (?, ?, ?, ?, ?)");
