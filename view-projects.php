@@ -31,6 +31,9 @@ while ($project = $projects->fetch_assoc()) {
   <td><?php echo $project['project_budget']; ?></td>
   <td><?php echo $project['project_location']; ?></td>
   <td>
+<?php
+include "view-projects-editform.php";
+?>
   </td>
   <td>
         <form method = "post" action = "">
