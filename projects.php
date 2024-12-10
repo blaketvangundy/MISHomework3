@@ -6,7 +6,7 @@ $pageTitle = "Projects";
 include "view-header.php";
 
 if (isset($_POST['actionType'])) {
-  switch($_PSOT['actionType'}){
+  switch($_POST['actionType'}){
     case "Add":
     insertProject($_POST['pName'], $_POST['pBudget'], $_POST['pLocation']);
     break;
