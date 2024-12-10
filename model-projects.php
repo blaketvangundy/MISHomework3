@@ -16,8 +16,8 @@ function selectProjects() {
 function insertProjects($pName, $pbudg, $ploc) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO project (project_name, project_budget, start_date, end_date, project_location) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("sssss", $pName, $pbudg, $pstart, $pend, $ploc);
+        $stmt = $conn->prepare("INSERT INTO project (project_name, project_budget, project_location) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $pName, $pbudg, $ploc);
         $success = $stmt->execute();
         $conn->close();
         return $success;
@@ -27,11 +27,11 @@ function insertProjects($pName, $pbudg, $ploc) {
     }
 }
 
-function updateProjects($pName, $pbudg, $pstart, $pend, $ploc, $pid) {
+function updateProjects($pName, $pbudg, $ploc, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE project SET project_name = ?, project_budget = ?, start_date = ?, end_date = ?, project_location = ? WHERE project_id = ?");
-        $stmt->bind_param("sssssi", $pName, $pbudg, $pstart, $pend, $ploc, $pid);
+        $stmt = $conn->prepare("UPDATE project SET project_name = ?, project_budget = ?, project_location = ? WHERE project_id = ?");
+        $stmt->bind_param("sssi", $pName, $pbudg, $ploc, $pid);
         $success = $stmt->execute();
         $conn->close();
         return $success;
