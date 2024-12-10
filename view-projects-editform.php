@@ -7,28 +7,28 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editprojectmodal <?php echo $project['project_id']; ?>" tabindex="-1" aria-labelledby="editprojectmodallabel <?php echo $project['project_id']; ?>" aria-hidden="true">
+<div class="modal fade" id="editprojectmodal<?php echo $project['project_id']; ?>" tabindex="-1" aria-labelledby="editprojectmodallabel<?php echo $project['project_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editprojectmodallabel <?php echo $project['project_id']; ?>">Edit Project</h1>
+        <h1 class="modal-title fs-5" id="editprojectmodallabel<?php echo $project['project_id']; ?>">Edit Project</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method="post" action="">
           <div class="mb-3">
-            <label for="pName <?php echo $project['project_id']; ?>" class="form-label">Project Name</label>
-            <input type="text" class="form-control" id="pName <?php echo $project['project_id']; ?>" name="pName" value = "<?php echo $project['project_name']; ?>">
+            <label for="pName<?php echo $project['project_id']; ?>" class="form-label">Project Name</label>
+            <input type="text" class="form-control" id="pName<?php echo $project['project_id']; ?>" name="pName" value="<?php echo $project['project_name']; ?>">
           </div>
           <div class="mb-3">
-            <label for="pBudget <?php echo $project['project_id']; ?>" class="form-label">Budget</label>
-            <input type="text" class="form-control" id="pBudget <?php echo $project['project_id']; ?>" name="pBudget" value = "<?php echo $project['project_budget']; ?>">
+            <label for="pBudget<?php echo $project['project_id']; ?>" class="form-label">Budget</label>
+            <input type="text" class="form-control" id="pBudget<?php echo $project['project_id']; ?>" name="pBudget" value="<?php echo $project['project_budget']; ?>">
           </div>
           <div class="mb-3">
-            <label for="pLocation <?php echo $project['project_id']; ?>" class="form-label">Location</label>
-            <input type="text" class="form-control" id="pLocation <?php echo $project['project_id']; ?>" name="pLocation" value = "<?php echo $project['project_location']; ?>">
+            <label for="pLocation<?php echo $project['project_id']; ?>" class="form-label">Location</label>
+            <input type="text" class="form-control" id="pLocation<?php echo $project['project_id']; ?>" name="pLocation" value="<?php echo $project['project_location']; ?>">
           </div>
-          <input type="hidden" name="pid" value = "<?php echo $project['project_id']; ?>">
+          <input type="hidden" name="pid" value="<?php echo $project['project_id']; ?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
