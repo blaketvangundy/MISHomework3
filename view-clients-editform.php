@@ -21,11 +21,11 @@
             <input type="text" class="form-control" id="cName<?php echo $client['client_id']; ?>" name="cName" value="<?php echo $client['client_name']; ?>">
           </div>
           <div class="mb-3">
-            <label for="cemail<?php echo $client['client_email']; ?>" class="form-label">Email</label>
+            <label for="cemail<?php echo $client['client_id']; ?>" class="form-label">Email</label>
             <input type="text" class="form-control" id="cemail<?php echo $client['client_email']; ?>" name="cemail" value="<?php echo $client['client_email']; ?>">
           </div>
           <div class="mb-3">
-            <label for="cphone<?php echo $client['client_phone']; ?>" class="form-label">Phone</label>
+            <label for="cphone<?php echo $client['client_id']; ?>" class="form-label">Phone</label>
             <input type="text" class="form-control" id="cphone<?php echo $client['client_phone']; ?>" name="cphone" value="<?php echo $client['client_phone']; ?>">
           </div>
           <div class="mb-3">
