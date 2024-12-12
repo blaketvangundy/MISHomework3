@@ -30,9 +30,11 @@
           </div>
           <div class="mb-3">
             <label for="eid<?php echo $project['project_id']; ?>" class="form-label">Employee ID</label>
-            <input type="text" class="form-control" id="eid<?php echo $project['project_id']; ?>" name="eid" value="<?php echo $project['employee_id']; ?>">
-          </div>
-
+<?php
+$employeeList = selectEmployeesForProjects();
+include "view-employee-input-list.php";
+?>          
+</div>
           <input type="hidden" name="pid" value="<?php echo $project['project_id']; ?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
