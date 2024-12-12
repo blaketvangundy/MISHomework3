@@ -32,6 +32,7 @@
             <label for="eid" class="form-label">Employee ID</label>
 <?php
 $employeeList = selectEmployeesForProjects();
+$selectedEmployee = 0;
 include "view-employee-input-list.php";
 ?>
           </div>
