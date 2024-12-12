@@ -14,7 +14,9 @@ include "view-employees-newform.php";
       <tr>
       <th>ID</th>
       <th>Name</th>
-      <th>Office</th>
+      <th>Position</th>
+        <th></th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
