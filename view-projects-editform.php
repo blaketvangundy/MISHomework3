@@ -28,6 +28,11 @@
             <label for="pLocation<?php echo $project['project_id']; ?>" class="form-label">Location</label>
             <input type="text" class="form-control" id="pLocation<?php echo $project['project_id']; ?>" name="pLocation" value="<?php echo $project['project_location']; ?>">
           </div>
+          <div class="mb-3">
+            <label for="eid<?php echo $project['project_id']; ?>" class="form-label">Employee ID</label>
+            <input type="text" class="form-control" id="eid<?php echo $project['project_id']; ?>" name="eid" value="<?php echo $project['employee_id']; ?>">
+          </div>
+
           <input type="hidden" name="pid" value="<?php echo $project['project_id']; ?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
