@@ -28,7 +28,6 @@ while ($employee = $employees->fetch_assoc()) {
   <td><?php echo $employee['employee_id']; ?></td>
   <td><?php echo $employee['employee_name']; ?></td>
   <td><?php echo $employee['employee_position']; ?></td>
-</tr>
   <td>
 <?php
 include "view-employees-editform.php";
@@ -52,7 +51,7 @@ include "view-employees-editform.php";
     <button type="submit" class="btn btn-primary">Assignments</button>
      </form>
   </td>
-</tr>
+
 <?php
 }
 ?>
