@@ -14,7 +14,7 @@
 while ($assignment = $assignments->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $assignment['project_id']; ?></td>
+  <td><?php echo $assignment['assignment_id']; ?></td>
   <td><?php echo $assignment['assignment_role']; ?></td>
   <td><?php echo $assignment['start_date']; ?></td>
   <td><?php echo $assignment['end_date']; ?></td>
