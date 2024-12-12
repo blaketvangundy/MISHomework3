@@ -16,6 +16,7 @@ include "view-projects-newform.php";
       <th>Name</th>
       <th>Budget</th>
       <th>Location</th>
+              <th>Employee ID</th>
         <th></th>
        <th></th>
         <th></th>
@@ -30,6 +31,7 @@ while ($project = $projects->fetch_assoc()) {
   <td><?php echo $project['project_name']; ?></td>
   <td><?php echo $project['project_budget']; ?></td>
   <td><?php echo $project['project_location']; ?></td>
+    <td><?php echo $project['employee_id']; ?></td>
   <td>
 <?php
 include "view-projects-editform.php";
