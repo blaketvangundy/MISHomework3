@@ -1,4 +1,4 @@
-<h1>Employees with Projects</h1>
+<h1>Employees with Assignments</h1>
 <div class="card-group">
 <?php
 while ($employee = $employees->fetch_assoc()) {
