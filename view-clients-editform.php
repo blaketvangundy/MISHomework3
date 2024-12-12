@@ -10,7 +10,7 @@
 <div class="modal fade" id="editclientmodal<?php echo $client['client_id']; ?>" tabindex="-1" aria-labelledby="editclientmodallabel<?php echo $client['client_id']; ?>" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">client
+      <div class="modal-header">
         <h1 class="modal-title fs-5" id="editclientmodallabel<?php echo $client['client_id']; ?>">Edit Client</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
