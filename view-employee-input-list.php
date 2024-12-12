@@ -6,5 +6,4 @@ while ($employeeItem = $employeeList->fetch_assoc()){
   <?php
 }
 ?>
-  <option value="3">Three</option>
 </select>
