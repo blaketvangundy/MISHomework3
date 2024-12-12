@@ -54,4 +54,17 @@ function deleteProjects($pid) {
         throw $e;
     }
 }
+function selectEmployeesForProjects() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT employee_id, employee_name FROM employee ORDER BY employee_name");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
