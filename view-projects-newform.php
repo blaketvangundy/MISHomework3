@@ -30,7 +30,10 @@
           </div>
                     <div class="mb-3">
             <label for="eid" class="form-label">Employee ID</label>
-            <input type="text" class="form-control" id="eid" name="eid">
+<?php
+$EmployeeList = selectEmployeesForProjects();
+include "view-employee-input-list.php";
+?>
           </div>
           <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
