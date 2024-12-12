@@ -2,7 +2,7 @@
 <?php
 while ($employeeItem = $employeeList->fetch_assoc()){
 ?>
-  <option value="<?php echo $employeeItem['employee_id']?>"><?php echo $employeeItem['employee_name']?</option>
+  <option value="<?php echo $employeeItem['employee_id']?>"><?php echo $employeeItem['employee_name']?></option>
   <?php
 }
 ?>
