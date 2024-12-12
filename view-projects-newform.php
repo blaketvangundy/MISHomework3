@@ -28,6 +28,10 @@
             <label for="pLocation" class="form-label">Location</label>
             <input type="text" class="form-control" id="pLocation" name="pLocation">
           </div>
+                    <div class="mb-3">
+            <label for="eid" class="form-label">Employee ID</label>
+            <input type="text" class="form-control" id="eid" name="eid">
+          </div>
           <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
