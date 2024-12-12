@@ -15,7 +15,7 @@ if (isset($_POST['actionType'])) {
     }
     break;
         case "Edit":
-    if (updateProjects($_POST['pName'], $_POST['pBudget'], $_POST['pLocation'], $_POST['eid'] $_POST['pid'])){
+    if (updateProjects($_POST['pName'], $_POST['pBudget'], $_POST['pLocation'], $_POST['eid'], $_POST['pid'])){
       echo '<div class="alert alert-success" role="alert"> Project Edited.</div>';}
     else{
       echo '<div class="alert alert-danger" role="alert">Error</div>';
