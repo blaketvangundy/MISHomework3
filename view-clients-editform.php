@@ -22,15 +22,15 @@
           </div>
           <div class="mb-3">
             <label for="cemail<?php echo $client['client_id']; ?>" class="form-label">Email</label>
-            <input type="text" class="form-control" id="cemail<?php echo $client['client_email']; ?>" name="cemail" value="<?php echo $client['client_email']; ?>">
+            <input type="text" class="form-control" id="cemail<?php echo $client['client_id']; ?>" name="cemail" value="<?php echo $client['client_email']; ?>">
           </div>
           <div class="mb-3">
             <label for="cphone<?php echo $client['client_id']; ?>" class="form-label">Phone</label>
-            <input type="text" class="form-control" id="cphone<?php echo $client['client_phone']; ?>" name="cphone" value="<?php echo $client['client_phone']; ?>">
+            <input type="text" class="form-control" id="cphone<?php echo $client['client_id']; ?>" name="cphone" value="<?php echo $client['client_phone']; ?>">
           </div>
           <div class="mb-3">
             <label for="compname<?php echo $client['client_id']; ?>" class="form-label">Company Name</label>
-            <input type="text" class="form-control" id="compname<?php echo $client['company_name']; ?>" name="compname" value="<?php echo $client['company_name']; ?>">
+            <input type="text" class="form-control" id="compname<?php echo $client['company_id']; ?>" name="compname" value="<?php echo $client['company_name']; ?>">
           </div>
           <input type="hidden" name="cid" value="<?php echo $client['client_id']; ?>">
           <input type="hidden" name="actionType" value="Edit">
