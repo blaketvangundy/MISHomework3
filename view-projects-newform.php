@@ -31,7 +31,7 @@
                     <div class="mb-3">
             <label for="eid" class="form-label">Employee ID</label>
 <?php
-$EmployeeList = selectEmployeesForProjects();
+$employeeList = selectEmployeesForProjects();
 include "view-employee-input-list.php";
 ?>
           </div>
