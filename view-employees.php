@@ -47,9 +47,9 @@ include "view-employees-editform.php";
      </form>
   </td>
   <td>
-    <form method = "post" action = "projects-by-employee.php">
+    <form method = "post" action = "assignments-by-employee.php">
       <input type ="hidden" name = "eid" value ="<?php echo $employee['employee_id']; ?>">
-    <button type="submit" class="btn btn-primary">Projects</button>
+    <button type="submit" class="btn btn-primary">Assignments</button>
      </form>
   </td>
 </tr>
