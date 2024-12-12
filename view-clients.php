@@ -1,4 +1,12 @@
-<h1>Clients</h1>
+<div class = "row">
+  <div class = "col">
+    <h1>Clients</h1>
+  </div>
+  <div class = "col-auto">
+<?php
+include "view-projects-newform.php";
+?>
+  </div>
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -8,6 +16,8 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Company Name</th>
+        <th></th>
+        <th></th>
         <th></th>
       </tr>
     </thead>
