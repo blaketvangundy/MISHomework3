@@ -3,10 +3,12 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 
-<h1>Homework 4</h1>
-
-<!-- Add the image -->
-<img src="https://www.hashmicro.com/blog/wp-content/uploads/2022/09/1-1.jpg" alt="Homework 4 Image" class="img-fluid" />
+<!-- Page Content -->
+<div class="background-container">
+    <div class="text-center">
+        <h1>Final Project</h1>
+    </div>
+</div>
 
 <?php
 include "view-footer.php";
