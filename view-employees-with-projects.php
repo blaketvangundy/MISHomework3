@@ -1,5 +1,5 @@
 <div class="container bg-light p-4">
-  <h1>Employees with Assignments</h1>
+  <h1>Assigned Work</h1>
   <div class="card-group">
     <?php
     while ($employee = $employees->fetch_assoc()) {
