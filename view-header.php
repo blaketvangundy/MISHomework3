@@ -31,7 +31,7 @@
                         <li class="nav-item">
           <a class="nav-link" href="client.php">Clients</a>
                                     <li class="nav-item">
-          <a class="nav-link" href="map.php">Map</a>
+          <a class="nav-link" href="map.php">Map of Projects</a>
         </li>
       </ul>
     </div>
