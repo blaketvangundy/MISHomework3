@@ -33,8 +33,8 @@ include "view-header.php";  // Include the header
 
     /* Style for the main title (h1) */
     .content-container h1 {
-        font-size: 4em; /* Increase the font size */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add shadow to the text for better visibility */
+        font-size: 6em; /* Increase the font size */
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Optional: Add shadow to the text for better visibility */
         margin: 0; /* Remove any margin */
     }
 
