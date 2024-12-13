@@ -9,7 +9,7 @@ if ($mysqli->connect_error) {
 }
 
 // Query to get project locations
-$sql = "SELECT project_id, project_location FROM project";
+$sql = "SELECT project_id, project_name, project_location FROM project";
 $result = $mysqli->query($sql);
 
 $locations = [];
