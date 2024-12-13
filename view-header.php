@@ -26,7 +26,7 @@
           <a class="nav-link" href="projects.php">Projects</a>
         </li>
                 <li class="nav-item">
-          <a class="nav-link" href="employees-with-projects.php">Employees with Projects</a>
+          <a class="nav-link" href="employees-with-projects.php">Employees with Assignments and More</a>
         </li>
                         <li class="nav-item">
           <a class="nav-link" href="client.php">Clients</a>
