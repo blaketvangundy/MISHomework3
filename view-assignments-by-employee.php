@@ -12,6 +12,7 @@
       </thead>
       <tbody>
         <?php
+        // Fetching assignments from the database (assuming the $assignments variable is populated)
         while ($assignment = $assignments->fetch_assoc()) {
         ?>
           <tr>
@@ -21,4 +22,9 @@
             <td><?php echo $assignment['end_date']; ?></td>
           </tr>
         <?php
-      
+        }
+        ?>
+      </tbody>
+    </table>
+  </div>
+</div>
